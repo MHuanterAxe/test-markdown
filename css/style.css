@@ -66,6 +66,9 @@ section {
   max-width: 1440px;
   margin: 0 auto;
 }
+section#main {
+  margin-bottom: 170px;
+}
 section#main .main-container {
   display: flex;
   flex-direction: column;
@@ -130,6 +133,88 @@ section#main .main-container__comment-text {
   line-height: 18px;
   text-align: right;
   color: #BDBDBD;
+}
+section#about .about-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 771px;
+}
+section#about .about-container__block {
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section#about .about-container__block-content {
+  width: 432px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+section#about .about-container__block-content__headline {
+  margin-bottom: 48px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+section#about .about-container__block-content__text {
+  max-width: 500px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: #BDBDBD;
+}
+section#about .about-container__block-content__text span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+}
+section#about .about-container__block-content__info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #4C5EB4;
+}
+section#about .about-container__block-content__info-block__headline {
+  margin: 4px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+section#about .about-container__block-content__info-block__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+section#about .about-container__block-content__info-block:nth-child(1) {
+  padding: 16px 40px;
+  left: 56px;
+  top: 0;
+}
+section#about .about-container__block-content__info-block:nth-child(2) {
+  padding: 40px 24px;
+  right: 0;
+  top: 45%;
+  transform: translateY(-50%);
+}
+section#about .about-container__block-content__info-block:nth-child(3) {
+  padding: 56px 20px;
+  left: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
