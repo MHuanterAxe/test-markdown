@@ -6,3 +6,52 @@
     font-weight: 400;
     outline: none;
 }
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-height: 1000px;
+    height: 100%;
+    background-color: #0A0C15;
+    background-image: url("../assets/images/background-image.png");
+    background-size: cover;
+}
+
+header {
+    height: 80px;
+    max-width: 1440px;
+
+    margin: 60px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        cursor: pointer;
+
+        &__text {
+            color: $color-white;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: center;
+        }
+
+        &__icon {
+            width: 32px;
+            height: 32px;
+
+            margin-left: 24px;
+
+            background-image: url("../assets/images/icons/icon-burger.svg");
+        }
+    }
+}
