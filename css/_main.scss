@@ -23,6 +23,7 @@ header {
   max-width: 1440px;
 
   margin: 60px auto;
+  padding: 0 16px;
 
   display: flex;
   justify-content: space-between;
@@ -424,6 +425,8 @@ section {
 
   &#contact {
     .contact-container {
+      margin-bottom: 72px;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -492,6 +495,12 @@ section {
               line-height: 30px;
 
               color: $color-blue;
+
+              &:hover {
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: $color-blue;
+              }
             }
 
             &__icon {
@@ -505,6 +514,90 @@ section {
             }
           }
         }
+      }
+    }
+  }
+}
+
+footer {
+  margin-bottom: 64px;
+  padding: 0 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__column {
+      min-width: 100px;
+
+      margin-left: 72px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      &-headline {
+        margin-bottom: 4px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: $color-white;
+      }
+
+      &-item {
+        margin-bottom: 4px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #A9ABB3;
+
+        cursor: pointer;
+
+        &:hover {
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+        }
+      }
+
+      &-items {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__flex-column {
+          width: 100%;
+
+          display: flex;
+          justify-content: space-between;
+
+          &__social-icon {
+            cursor: pointer;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        min-width: 240px;
+      }
+
+      &:nth-child(3) {
+        min-width: 250px;
+      }
+
+      &:nth-child(4) {
+        min-width: 120px;
       }
     }
   }
