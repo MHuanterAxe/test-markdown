@@ -82,10 +82,7 @@ section#main .main-container__column {
   margin-bottom: 150px;
 }
 section#main .main-container__column-logo {
-  width: 171px;
-  height: 121px;
   margin-bottom: 100px;
-  background-image: url("../assets/images/main-logo.png");
 }
 section#main .main-container__column-headline {
   margin-bottom: 70px;
