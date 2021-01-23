@@ -473,12 +473,42 @@ footer .footer-container__column:nth-child(4) {
 
   section {
     max-width: 1024px;
+    padding: 0 20px;
   }
   section#main .main-container__column {
     margin-bottom: 310px;
   }
   section#main .main-container__column-logo {
     margin-bottom: 50px;
+  }
+  section#about .about-container__block-content {
+    width: 330px;
+  }
+  section#about .about-container__block-content__headline {
+    font-size: 56px;
+  }
+  section#about .about-container__block-content__info-block__headline {
+    font-size: 64px;
+  }
+  section#about .about-container__block-content__info-block__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 115%;
+    color: #FFFFFF;
+  }
+  section#about .about-container__block-content__info-block:nth-child(1) {
+    max-width: 165px;
+    max-height: 165px;
+    top: -40px;
+    left: 50px;
+  }
+  section#about .about-container__block-content__info-block:nth-child(3) {
+    max-width: 250px;
+    max-height: 250px;
+    top: 40px;
+    left: 20px;
+    padding: 36px 0;
   }
 }
 
