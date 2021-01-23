@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px) {
+  header {
+    max-width: 1024px;
+
+    margin: 60px auto 110px auto;
+  }
+
+  section {
+    max-width: 1024px;
+
+    &#main {
+      .main-container {
+
+        &__column {
+          margin-bottom: 310px;
+
+          &-logo {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+
+
+  }
+}

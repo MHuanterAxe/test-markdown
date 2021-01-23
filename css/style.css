@@ -465,4 +465,21 @@ footer .footer-container__column:nth-child(4) {
   min-width: 120px;
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    max-width: 1024px;
+    margin: 60px auto 110px auto;
+  }
+
+  section {
+    max-width: 1024px;
+  }
+  section#main .main-container__column {
+    margin-bottom: 310px;
+  }
+  section#main .main-container__column-logo {
+    margin-bottom: 50px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
