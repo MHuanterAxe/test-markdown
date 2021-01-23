@@ -522,6 +522,29 @@ footer .footer-container__column:nth-child(4) {
   section#projects .projects-container__button-container {
     width: 100%;
   }
+  section#contact .contact-container__info-block {
+    width: 80%;
+  }
+  section#contact .contact-container__info-block__headline {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  section#contact .contact-container__info-block__list {
+    margin-bottom: 40px;
+  }
+  section#contact .contact-container__info-block__list__list-item {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  section#contact .contact-container__info-block__link-info {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  section#contact .contact-container__info-block__link-button__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
