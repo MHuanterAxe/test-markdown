@@ -66,6 +66,7 @@ header .menu-container__icon {
 section {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 section#main {
   margin-bottom: 170px;
@@ -85,6 +86,8 @@ section#main .main-container__column-logo {
   margin-bottom: 100px;
 }
 section#main .main-container__column-headline {
+  max-width: 800px;
+  width: 100%;
   margin-bottom: 70px;
   font-style: normal;
   font-weight: normal;
@@ -124,6 +127,8 @@ section#main .main-container__comment-line {
   line-height: 36px;
 }
 section#main .main-container__comment-text {
+  max-width: 320px;
+  width: 100%;
   margin-left: 16px;
   font-style: normal;
   font-weight: normal;
@@ -343,6 +348,8 @@ section#contact .contact-container__info-block {
   background-size: cover;
 }
 section#contact .contact-container__info-block__headline {
+  max-width: 425px;
+  width: 100%;
   margin-bottom: 54px;
   font-style: normal;
   font-weight: bold;

@@ -61,6 +61,7 @@ section {
   max-width: 1440px;
 
   margin: 0 auto;
+  padding: 0 40px;
 
   &#main {
     margin-bottom: 170px;
@@ -82,6 +83,9 @@ section {
         }
 
         &-headline {
+          max-width: 800px;
+          width: 100%;
+
           margin-bottom: 70px;
 
           font-style: normal;
@@ -137,6 +141,9 @@ section {
         }
 
         &-text {
+          max-width: 320px;
+          width: 100%;
+
           margin-left: 16px;
 
           font-style: normal;
@@ -444,6 +451,9 @@ section {
         background-size: cover;
 
         &__headline {
+          max-width: 425px;
+          width: 100%;
+
           margin-bottom: 54px;
 
           font-style: normal;
