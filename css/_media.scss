@@ -159,15 +159,15 @@
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   header {
-    max-width: 640px;
+    max-width: 720px;
 
     margin: 60px auto 110px auto;
   }
 
   section {
-    max-width: 640px;
+    max-width: 720px;
 
     padding: 0 20px;
 
@@ -208,7 +208,7 @@
           align-items: center;
 
           &-content {
-            width: 540px;
+            width: 100%;
             margin: 20px auto;
 
             &__headline {
@@ -218,7 +218,7 @@
             }
 
             &__text {
-              max-width: 540px;
+              max-width: 100%;
             }
 
             &__info-block {
@@ -274,6 +274,9 @@
         &__grid-container {
           max-width: 100%;
 
+          grid-template-columns: repeat(1, 1fr);
+          grid-row-gap: 32px;
+
           &__block {
             padding: 0 16px;
 
@@ -281,7 +284,7 @@
               &__info-container {
                 &__project {
                   &-name {
-                    font-size: 20px;
+                    font-size: 24px;
                   }
                 }
               }
@@ -289,7 +292,7 @@
 
             &__description-line {
               &__text {
-                font-size: 14px;
+                font-size: 18px;
               }
             }
           }
@@ -297,6 +300,12 @@
 
         &__button-container {
           width: 100%;
+
+          &__button {
+            width: 100%;
+
+            margin: 0 20px;
+          }
         }
       }
     }
@@ -335,6 +344,438 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  header {
+    max-width: 420px;
+
+    margin: 20px auto 60px auto;
+
+    .text-logo {
+      height: 32px;
+    }
+
+    .menu-container {
+      &__text {
+        display: none;
+      }
+    }
+  }
+
+  section {
+    max-width: 420px;
+
+    padding: 0 20px;
+
+    &#main {
+      margin-bottom: 450px;
+
+      .main-container {
+        &__column {
+          margin-bottom: 80px;
+
+          &-logo {
+            margin-bottom: 50px;
+          }
+
+          &-headline {
+            max-width: 600px;
+            width: 100%;
+
+            margin-bottom: 70px;
+
+            font-size: 36px;
+          }
+
+          &-button {
+            height: 24px;
+
+            font-size: 18px;
+
+            &__icon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+
+        &__comment {
+          &-line {
+            font-size: 40px;
+            line-height: 36px;
+          }
+
+          &-text {
+            font-size: 18px;
+            line-height: 18px;
+            text-align: right;
+
+            color: #BDBDBD;
+          }
+        }
+      }
+    }
+
+    &#about {
+      .about-container {
+        &__block {
+
+          &-content {
+            width: 100%;
+
+            &__headline {
+              font-size: 36px;
+            }
+
+            &__text {
+              max-width: 360px;
+            }
+          }
+        }
+      }
+    }
+
+    &#projects {
+      .projects-container {
+        &__headline {
+          font-size: 36px;
+        }
+
+        &__grid-container {
+          max-width: 100%;
+          width: 100%;
+
+          &__block {
+            padding: 0 32px;
+
+            &__info-line {
+              &__info-container {
+                &__project {
+                  &-name {
+                    font-size: 24px;
+                  }
+                }
+              }
+            }
+
+            &__description-line {
+              &__text {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        &__button-container {
+          width: 100%;
+
+          &__button {
+            width: 100%;
+
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &#contact {
+      .contact-container {
+        &__info-block {
+          width: 100%;
+          max-width: 320px;
+
+          padding: 20px;
+          margin: 0;
+
+          &__headline {
+            max-width: 320px;
+
+            margin-bottom: 40px;
+
+            font-size: 28px;
+            line-height: 28px;
+          }
+
+          &__list {
+            margin-bottom: 40px;
+
+            &__list-item {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+
+          &__link {
+            &-info {
+              font-size: 18px;
+              line-height: 22px;
+            }
+
+            &-button {
+              &__text {
+                font-size: 18px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      width: 360px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__column {
+        min-width: 0;
+        width: 240px;
+
+        margin-left: 0;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        &-headline {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    max-width: 360px;
+
+    margin: 20px auto 60px auto;
+
+    .text-logo {
+      height: 32px;
+    }
+
+    .menu-container {
+      &__text {
+        display: none;
+      }
+    }
+  }
+
+  section {
+    max-width: 100%;
+
+    &#contact {
+      .contact-container {
+        &__info-block {
+          width: 100%;
+          max-width: 300px;
+
+          padding: 20px;
+          margin: 0 20px;
+
+          &__headline {
+            max-width: 320px;
+
+            margin-bottom: 40px;
+
+            font-size: 28px;
+            line-height: 28px;
+          }
+
+          &__list {
+            margin-bottom: 40px;
+
+            &__list-item {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+
+          &__link {
+            &-info {
+              font-size: 18px;
+              line-height: 22px;
+            }
+
+            &-button {
+              &__text {
+                font-size: 18px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 240px) {
+  header {
+    max-width: 240px;
+
+    margin: 20px auto 60px auto;
+
+    .text-logo {
+      height: 24px;
+    }
+
+    .menu-container {
+      &__text {
+        display: none;
+      }
+
+      &__icon {
+        transform: scale(75%);
+      }
+    }
+  }
+
+  section {
+    max-width: 100%;
+
+    &#main {
+      margin-bottom: 170px;
+    }
+
+    &#about {
+      .about-container {
+        &__block {
+
+          &-content {
+            width: 100%;
+
+            &__headline {
+              font-size: 32px;
+            }
+
+            &__text {
+              max-width: 240px;
+            }
+          }
+        }
+      }
+    }
+
+    &#projects {
+      .projects-container {
+        &__headline {
+          font-size: 32px;
+        }
+
+        &__grid-container {
+          max-width: 100%;
+          width: 100%;
+
+          &__block {
+            height: 380px;
+
+            padding: 0 16px;
+
+            &__info-line {
+              height: 60%;
+
+              flex-direction: column;
+              justify-content: center;
+
+              &__info-container {
+                margin-top: 16px;
+                &__project {
+                  &-type {
+                    text-align: center;
+                  }
+                  &-name {
+                    text-align: center;
+
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+
+            &__description-line {
+              height: 40%;
+
+              &__text {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &#contact {
+      .contact-container {
+        &__info-block {
+          width: 100%;
+          max-width: 240px;
+
+          padding: 10px;
+          margin: 0;
+
+          &__headline {
+            max-width: 240px;
+
+            margin-bottom: 40px;
+
+            font-size: 20px;
+            line-height: 20px;
+          }
+
+          &__list {
+            margin-bottom: 40px;
+
+            &__list-item {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
+          &__link {
+            &-info {
+              font-size: 14px;
+              line-height: 18px;
+            }
+
+            &-button {
+              &__text {
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      width: 200px;
+
+      &__column {
+        min-width: 0;
+        width: 200px;
+
+        margin-left: 0;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        &-headline {
+          margin-bottom: 8px;
         }
       }
     }
