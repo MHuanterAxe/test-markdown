@@ -842,6 +842,7 @@ footer .footer-container__column:nth-child(4) {
   }
   section#about .about-container__block-content {
     width: 330px;
+    padding: 0 0 0 20px;
   }
   section#about .about-container__block-content__headline {
     font-size: 56px;
@@ -944,10 +945,12 @@ footer .footer-container__column:nth-child(4) {
   }
   section {
     max-width: 720px;
-    padding: 0 20px;
   }
   section#main {
     margin-bottom: 350px;
+  }
+  section#main .main-container {
+    padding: 0 20px;
   }
   section#main .main-container__column {
     margin-bottom: 80px;
@@ -967,6 +970,7 @@ footer .footer-container__column:nth-child(4) {
   section#about .about-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0 20px;
   }
   section#about .about-container__block {
     width: 100%;
@@ -1100,8 +1104,9 @@ footer .footer-container__column:nth-child(4) {
     margin-bottom: 50px;
   }
   section#main .main-container__column-headline {
-    max-width: 600px;
-    width: 100%;
+    max-width: auto;
+    width: auto;
+    padding: 0 20px;
     margin-bottom: 70px;
     font-size: 36px;
   }
@@ -1112,6 +1117,9 @@ footer .footer-container__column:nth-child(4) {
   section#main .main-container__column-button__icon {
     width: 24px;
     height: 24px;
+  }
+  section#main .main-container__comment {
+    padding-left: 20px;
   }
   section#main .main-container__comment-line {
     font-size: 40px;
@@ -1125,35 +1133,42 @@ footer .footer-container__column:nth-child(4) {
   }
   section#about .about-container__block-content {
     width: 100%;
+    padding: 0 20px;
   }
   section#about .about-container__block-content__headline {
-    font-size: 36px;
+    font-size: 24px;
   }
   section#about .about-container__block-content__text {
-    max-width: 360px;
+    max-width: auto;
+    font-size: 18px;
   }
   section#projects .projects-container__headline {
-    font-size: 36px;
+    font-size: 24px;
   }
   section#projects .projects-container__grid-container {
     max-width: 100%;
     width: 100%;
+    padding: 0 20px;
   }
   section#projects .projects-container__grid-container__block {
-    padding: 0 32px;
+    padding: 0 4px;
   }
   section#projects .projects-container__grid-container__block__info-line__info-container__project-name {
-    font-size: 24px;
+    font-size: 20px;
   }
   section#projects .projects-container__grid-container__block__description-line__text {
-    font-size: 18px;
+    font-size: 14px;
   }
   section#projects .projects-container__button-container {
     width: 100%;
+    padding: 0 20px;
   }
   section#projects .projects-container__button-container__button {
     width: 100%;
     margin: 0;
+  }
+  section#contact .contact-container {
+    padding: 0 20px;
   }
   section#contact .contact-container__info-block {
     width: 100%;
@@ -1162,10 +1177,10 @@ footer .footer-container__column:nth-child(4) {
     margin: 0;
   }
   section#contact .contact-container__info-block__headline {
-    max-width: 320px;
+    max-width: 280px;
     margin-bottom: 40px;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 22px;
   }
   section#contact .contact-container__info-block__list {
     margin-bottom: 40px;

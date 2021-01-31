@@ -28,6 +28,7 @@
         &__block {
           &-content {
             width: 330px;
+            padding: 0 0 0 20px;
 
             &__headline {
               font-size: 56px;
@@ -183,12 +184,12 @@
   section {
     max-width: 720px;
 
-    padding: 0 20px;
 
     &#main {
       margin-bottom: 350px;
 
       .main-container {
+        padding: 0 20px;
         &__column {
           margin-bottom: 80px;
 
@@ -213,6 +214,7 @@
 
       .about-container {
         flex-wrap: wrap;
+        padding: 0 20px;
 
         &__block {
           width: 100%;
@@ -398,8 +400,9 @@
           }
 
           &-headline {
-            max-width: 600px;
-            width: 100%;
+            max-width: auto;
+            width: auto;
+            padding: 0 20px;
 
             margin-bottom: 70px;
 
@@ -419,6 +422,7 @@
         }
 
         &__comment {
+          padding-left: 20px;
           &-line {
             font-size: 40px;
             line-height: 36px;
@@ -441,13 +445,15 @@
 
           &-content {
             width: 100%;
+            padding: 0 20px;
 
             &__headline {
-              font-size: 36px;
+              font-size: 24px;
             }
 
             &__text {
-              max-width: 360px;
+              max-width: auto;
+              font-size: 18px;
             }
           }
         }
@@ -457,21 +463,22 @@
     &#projects {
       .projects-container {
         &__headline {
-          font-size: 36px;
+          font-size: 24px;
         }
 
         &__grid-container {
           max-width: 100%;
           width: 100%;
+          padding: 0 20px;
 
           &__block {
-            padding: 0 32px;
+            padding: 0 4px;
 
             &__info-line {
               &__info-container {
                 &__project {
                   &-name {
-                    font-size: 24px;
+                    font-size: 20px;
                   }
                 }
               }
@@ -479,7 +486,7 @@
 
             &__description-line {
               &__text {
-                font-size: 18px;
+                font-size: 14px;
               }
             }
           }
@@ -487,6 +494,7 @@
 
         &__button-container {
           width: 100%;
+          padding: 0 20px;
 
           &__button {
             width: 100%;
@@ -499,6 +507,7 @@
 
     &#contact {
       .contact-container {
+        padding: 0 20px;
         &__info-block {
           width: 100%;
           max-width: 320px;
@@ -507,12 +516,12 @@
           margin: 0;
 
           &__headline {
-            max-width: 320px;
+            max-width: 280px;
 
             margin-bottom: 40px;
 
-            font-size: 28px;
-            line-height: 28px;
+            font-size: 22px;
+            line-height: 22px;
           }
 
           &__list {
