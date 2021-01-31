@@ -7,8 +7,7 @@ const SECTION_IDS = ['main', 'about', 'projects', 'contact']
 
 const buttonCaptions = document.querySelectorAll(`div.${CAPTION_CLASS}, div.${CAPTION_ACTIVE_CLASS}`),
       buttonCircles = document.querySelectorAll(`div.${CIRCLE_CLASS}, div.${CIRCLE_ACTIVE_CLASS}`),
-      activeCaption = document.querySelector(`div.${CAPTION_ACTIVE_CLASS}`),
-      activeCircle = document.querySelector(`div.${CIRCLE_ACTIVE_CLASS}`);
+      sections = document.querySelectorAll(`section`)
 
 function init () {
   const setIndexes = (element, index) => {
@@ -22,7 +21,7 @@ function init () {
 function select({target}) {
   const changeState = (targetCLicked, nodeList, unactiveClass, activeClass) => {
     buttons.forEach((button, index) => {
-      if(button.id === index) {
+      if(button.id === index && targetCLicked.dataset.index >= 0) {
         if(button.active) {
           nodeList.item(index).classList.remove(activeClass)
           nodeList.item(index).classList.add(unactiveClass)
@@ -31,9 +30,8 @@ function select({target}) {
         if(button.id.toString() == targetCLicked.dataset.index) {
           nodeList.item(index).classList.remove(unactiveClass)
           nodeList.item(index).classList.add(activeClass)
-
           window.scrollTo({
-            top: document.querySelector(`section#${SECTION_IDS[button.id]}`).getBoundingClientRect().top,
+            top: document.querySelector(`section#${SECTION_IDS[button.id]}`).offsetTop,
             behavior: 'smooth'
           })
         }
@@ -52,6 +50,11 @@ function select({target}) {
   changeState(target, buttonCircles, CIRCLE_CLASS, CIRCLE_ACTIVE_CLASS)
 }
 
+function changeOnScroll (target) {
+  console.log(target);
+}
+
 document.addEventListener('DOMContentLoaded', init)
 buttonCaptions.forEach(addEventListener('click', select))
 buttonCaptions.forEach(addEventListener('click', select))
+document.body.addEventListener('scroll', changeOnScroll)

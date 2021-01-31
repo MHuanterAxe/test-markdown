@@ -157,6 +157,20 @@
     }
   }
 
+  #nav {
+    .navigation {
+      min-width: 0;
+
+      left: 10px;
+
+      &-container {
+        &__captions-container {
+          display: none;
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 720px) {

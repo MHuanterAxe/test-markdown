@@ -688,6 +688,27 @@ footer {
             background-color: #828282;
             border: #828282 0 solid;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: all 0.2s ease;
+
+            &:after {
+              content: '';
+
+              width: 10px;
+              height: 10px;
+
+              transition: all 0.2s ease;
+
+              border-radius: 50%;
+              background-color: #828282;
+              border: #828282 0 solid;
+
+              cursor: pointer;
+            }
+
             &-active {
               width: 20px;
               height: 20px;
@@ -695,6 +716,8 @@ footer {
               display: flex;
               justify-content: center;
               align-items: center;
+
+              transition: all 0.2s ease;
 
               border-radius: 50%;
               background-color: transparent;
