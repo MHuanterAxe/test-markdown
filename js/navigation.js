@@ -56,5 +56,7 @@ function changeOnScroll (target) {
 
 document.addEventListener('DOMContentLoaded', init)
 buttonCaptions.forEach(addEventListener('click', select))
+buttonCircles.forEach(addEventListener('touchstart', select))
 buttonCaptions.forEach(addEventListener('click', select))
+buttonCircles.forEach(addEventListener('touchstart', select))
 document.body.addEventListener('scroll', changeOnScroll)
