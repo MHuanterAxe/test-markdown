@@ -685,10 +685,10 @@ footer .footer-container__column:nth-child(4) {
 }
 
 #nav {
+  width: auto;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
 }
 
